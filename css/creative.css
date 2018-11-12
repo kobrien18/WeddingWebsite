@@ -61,6 +61,7 @@ h6 {
 }
 
 figure {
+	margin: 0 auto;
 	width: 100%;
 	max-width:650px;
 }
@@ -264,7 +265,7 @@ header.masthead p {
 
 #details ul {
   max-width: 600px;
-  width: calc(100vw - 30px);
+  width: 100%;
   padding: 0;
   list-style: none;
   white-space:nowrap;
@@ -280,6 +281,12 @@ header.masthead p {
 #details ul li span {
   font-size: 3rem;
   font-weight: bold;
+}
+
+@media (max-width: 375px) {
+  #details ul li span {
+    font-size: 2rem;
+  }
 }
 
 .service-box {
