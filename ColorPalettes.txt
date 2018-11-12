@@ -1,0 +1,25 @@
+Based on Burgundy (800020), Blush /Light Blush (de5d83/f4bbfc), and Metallic/Dome Gold (d4af37/c99700)
+
+METALLIC
+LIGHT:
+pink accent: f4767a
+mystic shade: d7e8e8
+
+DARK:
+orange accent: dd3b36
+dark shade: 233348
+
+DOME
+LIGHT:
+brass accent: c48e72
+gray shade: cdc0dc
+
+DARK:
+orange accent: d93531
+mirage shade: 202f40
+
+
+Fonts:
+Alex Brush
+Cormorant
+Martel
