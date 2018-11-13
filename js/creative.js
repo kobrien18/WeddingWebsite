@@ -74,6 +74,18 @@
 	scale: 1.0,
     distance: '0px'
   }, 100);
+  sr.reveal('.sr-portraits', {
+	duration: 1000,
+	rotate: { x: 0, y: 90, z: 0 },
+	scale: 1.0,
+    distance: '0px'
+  }, 300);
+  sr.reveal('.sr-gallery', {
+	duration: 1000,
+	rotate: { x: 0, y: 90, z: 0 },
+	scale: 1.0,
+    distance: '0px'
+  }, 100);
   sr.reveal('.sr-contact', {
     duration: 600,
     scale: 0.3,

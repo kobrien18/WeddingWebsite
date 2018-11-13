@@ -61,7 +61,6 @@ h6 {
 }
 
 figure {
-	margin: 0 auto;
 	width: 100%;
 	max-width:650px;
 }
@@ -354,6 +353,13 @@ header.masthead p {
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     font-size: 22px;
   }
+}
+
+.gallery-box:hover{
+  opacity:0.6;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .text-center {
