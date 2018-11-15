@@ -1,4 +1,9 @@
-(function($) {
+ $('body').css({'overflow':'hidden'});
+  $(document).bind('scroll',function () { 
+       window.scrollTo(0,0); 
+  });
+  
+  (function($) {
   "use strict"; // Start of use strict
 
   // Smooth scrolling using jQuery easing
@@ -92,6 +97,7 @@
     distance: '0px'
   }, 300);
 
+
   // Magnific popup calls
   $('.popup-gallery').magnificPopup({
     delegate: 'a',
@@ -110,3 +116,29 @@
 
 
 })(jQuery); // End of use strict
+
+// Get the input field
+var input = document.getElementById("password");
+
+// Execute a function when the user releases a key on the keyboard
+input.addEventListener("keydown", function(event) {
+  // Cancel the default action, if needed
+  // event.preventDefault();
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Trigger the button element with a click
+    isValid();
+  }
+});
+
+// Password-protect
+function isValid(){
+  var password = document.getElementById('password').value;
+  if (sha256(password) == "76cacb5d22cf422d1c1ca68a3963fd52a1e2b7e7c3b3ea8e5055a8d88d1bd4f5") {
+	document.getElementById('page-splash').remove();
+	$(document).unbind('scroll'); 
+    $('body').css({'overflow':'visible'});
+  }
+  else
+	{alert('Wrong Password')}
+}

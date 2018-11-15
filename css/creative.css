@@ -281,10 +281,17 @@ header.masthead p {
   font-size: 3rem;
   font-weight: bold;
 }
+#details h1 {
+  font-size: 3rem;
+}
 
 @media (max-width: 375px) {
   #details ul li span {
     font-size: 2rem;
+  }
+  
+  #details h1 {
+	font-size: 2rem;
   }
 }
 
@@ -412,4 +419,66 @@ header.masthead p {
 
 .btn-primary:active, .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(244, 187, 252, 0.5) !important;
+}
+
+.box-splash {
+	align-items: center;
+}
+
+.account-panel
+{
+    margin-top: 20%;
+}
+
+.panel-heading h1{
+  margin: 0;
+  font-size: 3rem;
+  color: #800020;
+  font-family: 'Alex Brush', cursive, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+
+}
+
+@media (min-width: 992px) {
+  .panel-heading h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .panel-heading h1 {
+    font-size: 6rem;
+  }
+}
+
+.unlock-form .input-group-addon:first-child {
+    border-bottom-left-radius: 0;
+}
+.unlock-form .input-group-btn:last-child>.btn,
+.input-group .form-control:last-child {
+    border-bottom-right-radius: 0;
+}
+.unlock-form .btn-block {
+    margin-top: 5px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+.page-splash {
+    z-index: 99999 !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #999;
+    opacity: .8;
+    pointer-events: auto;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: opacity 0.3s linear;
+    -moz-transition: opacity 0.3s linear;
+    -o-transition: opacity 0.3s linear;
+    transition: opacity 0.3s linear;
 }

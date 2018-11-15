@@ -36,6 +36,34 @@
 
   <body id="page-top">
 
+	<div id="page-splash" class="page-splash">
+		<div class="container h-100">
+			<div class="row my-auto box-splash h-100">
+				<div class="mx-auto col-sm-12 col-md-8 col-lg-4">
+					<div class="panel panel-default account-panel">
+						<div class="panel-heading">
+							<h1 class="panel-title text-center">C & K</h1>
+						</div>
+						<hr class="my-4">
+						<div class="panel-body">
+							<div class="center-block text-center">
+								<form class="unlock-form">
+									<div class="input-group">
+										<span class="input-group-addon">
+											<i class="glyphicon glyphicon-lock"></i>
+										</span>
+										<input id="password" type="password" class="form-control" placeholder="Password" required autofocus>
+									</div>
+									<button type="button" class="btn btn-primary btn-block" onclick="isValid();">Unlock</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
@@ -58,7 +86,7 @@
               <a class="nav-link js-scroll-trigger" href="#photos">Photos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#registry">Registry</a>
+              <a class="nav-link js-scroll-trigger" href="#registries">Registries</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#rsvp">RSVP</a>
@@ -107,6 +135,13 @@
 		</ul>
 		
 		<div class="row">
+		  <div class="col-lg-8 mx-auto text-center">
+			<h2 class="section-heading text-white">until</h2>
+            <h1 class="section-heading text-white">October 19, 2019</h1>
+          </div>
+		</div>
+		
+		<div class="row">
 			<div class="col-lg-12 text-center">
 				<img  class="img-fluid" src="img/leafdivider.svg" alt="-">
 			</div>
@@ -116,15 +151,16 @@
 		
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading text-white">October 19, 2019</h2>
-            <hr class="light my-4">
-            <h4 class="text-white mb-4">Sts. Peter and Paul | 2:00 PM </h4>
+            <h4 class="text-white mb-4"><b>Ceremony</b></h4>
+			<h4 class="text-white mb-4">Sts. Peter and Paul | 2:00 PM </h4>
             <p class="text-white mb-4"><i class="text-white fa fa-map-marker"></i> <a class="location-white" href="https://goo.gl/maps/YkbPtLGZ3Ty">4309 Thomas Jefferson Pkwy, Palmyra, VA 22963</a></p>
-			<br />
-            <h4 class="text-white mb-4">The Event Barn at Mount Ida | 5:30 PM</h4>
+			<hr class="light my-4">
+			<h4 class="text-white mb-4"><b>Reception</b></h4>
+			<h4 class="text-white mb-4">The Event Barn at Mount Ida | 5:30 PM</h4>
 			<p class="text-white mb-4">Cocktail Hour will start at 4:30 PM</p>
 			<p class="text-white mb-4"><i class="text-white fa fa-map-marker"></i> <a class="location-white" href="https://goo.gl/maps/K3cJnuNFVH52">6903 Blenheim Rd, Scottsville, VA 24590</a></p>
-            <a class="btn btn-light btn-xl js-scroll-trigger" href="#accomodations">Accomodations</a>
+            <br />
+			<a class="btn btn-light btn-xl js-scroll-trigger" href="#accomodations">Accomodations</a>
           </div>
         </div>
       </div>
@@ -151,6 +187,9 @@
 			<p class="text-primary mb-4"><i class="text-primary fa fa-map-marker"></i> <a class="location-primary" href="https://goo.gl/maps/KaptWoJbSmG2">2097 Inn Dr, Charlottesville, VA 22911</a></p>
 		  </div>
 		</div>
+		<div class="row">
+		  <h6 class="col-lg-12 text-center">Please book early in case there is a UVa home game</h6>
+		</div>
 	  </div>
 	  
 	  <br /><br /><br />
@@ -171,7 +210,7 @@
             <div class="service-box mt-5 mx-auto">
               <img class="window-view sr-photos" src="img/JeffersonVineyards.jpg" alt="Jefferson">
               <h3 class="mb-3">Wineries</h3>
-              <p class="text-muted mb-0">Sip on the best kept secrets in wine and enjoy charolottesville scenary</p>
+              <p class="text-muted mb-0">Sip on the best kept secrets in wine and enjoy Charolottesville scenery</p>
             </div>
 			</a>
           </div>
@@ -180,7 +219,7 @@
             <div class="service-box mt-5 mx-auto">
               <img class="window-view sr-photos" src="img/CarterMountain.jpg" alt="Jefferson">
               <h3 class="mb-3">Carter Mountain</h3>
-              <p class="text-muted mb-0">Pick apples and enjoy and amazing view</p>
+              <p class="text-muted mb-0">Pick apples and enjoy an amazing view</p>
             </div>
 			</a>
           </div>
@@ -198,7 +237,7 @@
             <div class="service-box mt-5 mx-auto">
               <img class="window-view sr-photos" src="img/Downtown.jpg" alt="Jefferson">
               <h3 class="mb-3">Historic Downtown</h3>
-              <p class="text-muted mb-0">Explore a walkable collection of restaraunts, cafe, and culture </p>
+              <p class="text-muted mb-0">Explore a walkable collection of restaraunts, cafés, and culture </p>
             </div>
 			</a>
           </div>
@@ -210,6 +249,7 @@
 	  <div class="container">
 		<div class="row">
 		  <div class="col-lg-12 text-center">
+			<br />
 			<a class="btn btn-light btn-xl js-scroll-trigger" href="#story">Our Story</a>
 		  </div>
 		</div>
@@ -235,11 +275,13 @@
 				<img class="img-fluid window-view sr-portraits" src="img/kevin1.jpg" alt="Picture of Kevin">
 			</div>
 		</div>
+        <br />
+		<a class="btn btn-light btn-xl js-scroll-trigger" href="#photos">Photos</a>
       </div>
     </section>
 
-    <section class="p-0" id="photos">
-	  <div class="container">
+    <section id="photos">
+	  <div class="container text-center">
         <div class="row">
           <div class="col-lg-12 text-center">
 			<br/>
@@ -247,64 +289,90 @@
             <hr class="my-4">
           </div>
         </div>
-      </div>
 	  
-	  <div class="container picture">
-	    <div class="row">
+	    <div class="row picture">
 			<div class="col-lg-4 col-md-6 col-sm-12 p-1">
 		      <figure class="m-auto gallery-box">
 				<a href="img/portfolio/fullsize/1.jpeg" data-size="3264x2448">
-				  <img class="sr-gallery" src="img/portfolio/thumbnails/1.jpg" alt="1">
+				  <img class="sr-gallery" src="img/portfolio/thumbnails/1.jpeg" alt="C&K">
 				</a>
 			  </figure>
 			</div>
-			<div class="col-lg-4 col-md-6 col-sm-12 p-1">
-			  <figure class="m-auto gallery-box">
-				<a href="img/portfolio/fullsize/2.jpeg" data-size="1881x1881">
-				  <img class="sr-gallery" src="img/portfolio/thumbnails/2.jpg" alt="2">
-				</a>
-			  </figure>
-			</div>
+			<a href="img/portfolio/fullsize/2.jpeg" data-size="1881x1881"></a>
 			<div class="col-lg-4 col-md-6 col-sm-12 p-1">
 			  <figure class="m-auto gallery-box">
 				<a href="img/portfolio/fullsize/3.jpeg" data-size="1280x960">
-				  <img class="sr-gallery" src="img/portfolio/thumbnails/3.jpg" alt="2">
+				  <img class="sr-gallery" src="img/portfolio/thumbnails/3.jpeg" alt="C&K">
 				</a>
 			  </figure>
 			</div>
-			<div class="col-lg-4 col-md-6 col-sm-12 p-1">
-			  <figure class="m-auto gallery-box">
-				<a href="img/portfolio/fullsize/4.jpeg" data-size="720x720">
-				  <img class="sr-gallery" src="img/portfolio/thumbnails/4.jpg" alt="2">
-				</a>
-			  </figure>
-			</div>
+			<a href="img/portfolio/fullsize/4.jpeg" data-size="720x720"></a>
 			<div class="col-lg-4 col-md-6 col-sm-12 p-1">
 			  <figure class="m-auto gallery-box">
 				<a href="img/portfolio/fullsize/5.jpeg" data-size="1005x1005">
-				  <img class="sr-gallery" src="img/portfolio/thumbnails/5.jpg" alt="2">
+				  <img class="sr-gallery" src="img/portfolio/thumbnails/5.jpeg" alt="C&K">
 				</a>
 			  </figure>
 			</div>
+			<a href="img/portfolio/fullsize/6.jpeg" data-size="960x1280"></a>
+			<a href="img/portfolio/fullsize/7.jpeg" data-size="766x768"></a>
+			<a href="img/portfolio/fullsize/8.jpeg" data-size="2448x3264"></a>
+			<a href="img/portfolio/fullsize/9.jpeg" data-size="960x1280"></a>
+			<a href="img/portfolio/fullsize/10.jpeg" data-size="2448x3264"></a>
+			<a href="img/portfolio/fullsize/11.jpeg" data-size="2448x3264"></a>
+			<a href="img/portfolio/fullsize/12.jpeg" data-size="2448x3264"></a>
+			<a href="img/portfolio/fullsize/13.jpeg" data-size="960x1280"></a>
+			<a href="img/portfolio/fullsize/14.jpeg" data-size="2448x3264"></a>
+			<a href="img/portfolio/fullsize/15.jpeg" data-size="3264x2448"></a>
 			<div class="col-lg-4 col-md-6 col-sm-12 p-1">
 			  <figure class="m-auto gallery-box">
-				<a href="img/portfolio/fullsize/6.jpeg" data-size="1280x960">
-				  <img class="sr-gallery" src="img/portfolio/thumbnails/6.jpg" alt="2">
+				<a href="img/portfolio/fullsize/16.jpeg" data-size="3264x2448">
+				  <img class="sr-gallery" src="img/portfolio/thumbnails/16.jpeg" alt="C&K">
 				</a>
 			  </figure>
 			</div>
-	    </div>
-		<a href="img/portfolio/fullsize/3.jpeg" data-size="1280x960"></a>
-	  </div>
-	  <br />
+			<a href="img/portfolio/fullsize/17.jpeg" data-size="2608x3478"></a>
+			<a href="img/portfolio/fullsize/18.jpeg" data-size="960x1280"></a>
+			<a href="img/portfolio/fullsize/19.jpeg" data-size="1831x1830"></a>
+			<a href="img/portfolio/fullsize/20.jpeg" data-size="960x1280"></a>
+			<a href="img/portfolio/fullsize/21.jpeg" data-size="2448x3264"></a>
+			<a href="img/portfolio/fullsize/22.jpeg" data-size="3024x4032"></a>
+			<a href="img/portfolio/fullsize/23.jpeg" data-size="3264x2448"></a>
+			<a href="img/portfolio/fullsize/24.jpeg" data-size="2448x3264"></a>
+			<a href="img/portfolio/fullsize/25.jpeg" data-size="1831x1830"></a>
+			<a href="img/portfolio/fullsize/26.jpeg" data-size="3264x2448"></a>
+			<a href="img/portfolio/fullsize/27.jpeg" data-size="960x1280"></a>
+			<a href="img/portfolio/fullsize/28.jpeg" data-size="1802x2404"></a>
+			<a href="img/portfolio/fullsize/29.jpeg" data-size="960x1280"></a>
+			<a href="img/portfolio/fullsize/30.jpeg" data-size="960x1280"></a>
+			<a href="img/portfolio/fullsize/31.jpeg" data-size="960x1280"></a>
+			<div class="col-lg-4 col-md-6 col-sm-12 p-1">
+			  <figure class="m-auto gallery-box">
+				<a href="img/portfolio/fullsize/32.jpeg" data-size="3264x4896">
+				  <img class="sr-gallery" src="img/portfolio/thumbnails/32.jpeg" alt="C&K">
+				</a>
+			  </figure>
+			</div>
+			<a href="img/portfolio/fullsize/33.jpeg" data-size="960x1280"></a>
+			<div class="col-lg-4 col-md-6 col-sm-12 p-1">
+			  <figure class="m-auto gallery-box">
+				<a href="img/portfolio/fullsize/34.jpeg" data-size="1280x960">
+				  <img class="sr-gallery" src="img/portfolio/thumbnails/34.jpeg" alt="C&K">
+				</a>
+			  </figure>
+			</div>
+		</div>
+		
+		<br />
+		<a class="btn btn-light btn-xl js-scroll-trigger" href="#registries">Registries</a>
     </section>
 	
-    <section class="bg-primary text-white" id="registry">
+    <section class="bg-primary text-white" id="registries">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
 			<br/>
-            <h2 class="section-heading">Registry</h2>
+            <h2 class="section-heading">Registries</h2>
             <hr class="my-4">
           </div>
         </div>
@@ -323,6 +391,8 @@
 		  <a href="https://www.blueprintregistry.com/registry/caroline-kevin-obrien-wedding-registry-10-19-2019"><img class="window-view registry sr-image" src="img/blueprint.png" alt="Blueprint"></a>
 		</div>
 	  </div>
+	  <br />
+	  <a class="btn btn-light btn-xl js-scroll-trigger" href="#rsvp">RSVP</a>
 	  </div>
     </section>
 
@@ -330,20 +400,21 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">RSVP here</h2>
+            <h2 class="section-heading">RSVP To Come Later</h2>
             <hr class="my-4">
-            <p class="mb-5">Some RSVP form embeded</p>
+            <p class="mb-5">If you have any questions, please reach out at:</p>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-4 ml-auto text-center">
             <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
-            <p>123-456-6789</p>
+            <p>Groom: 469-426-6710</p>
+			<p>Bride: 703-314-5458</p>
           </div>
           <div class="col-lg-4 mr-auto text-center">
             <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
             <p>
-              <a href="mailto:your-email@your-domain.com">email@domain.com</a>
+              <a href="mailto:cdakjo2019@gmail.com">cdakjo2019@gmail.com</a>
             </p>
           </div>
         </div>
@@ -387,7 +458,7 @@
 			</div>
 		</div>
 	</div>
-
+	
 	<!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -401,6 +472,7 @@
 	<script src="js/clock.js"></script>
 
     <!-- Custom scripts for this template -->
+    <script src="js/sha256.min.js"></script>
     <script src="js/creative.js"></script>
 	<script src="js/gallery.js"></script>
 	
